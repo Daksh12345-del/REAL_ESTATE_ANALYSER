@@ -1,0 +1,27 @@
+# Python virtual environments
+backend/venv/
+backend/venv2/
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Node
+frontend/node_modules/
+frontend/dist/
+
+# Raw datasets (~150 MB, the app only reads data/processed)
+backend/data/raw/
+
+# Env files and secrets
+.env
+.env.*
+
+# OS and editor files
+.DS_Store
+.vscode/
+
+# Jupyter
+.ipynb_checkpoints/
