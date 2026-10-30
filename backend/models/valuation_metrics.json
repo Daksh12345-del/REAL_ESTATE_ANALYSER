@@ -1,0 +1,47 @@
+{
+  "listings": 128345,
+  "cities": [
+    "Ahmedabad",
+    "Bengaluru",
+    "Chennai",
+    "Delhi",
+    "Faridabad",
+    "Ghaziabad",
+    "Gurugram",
+    "Hyderabad",
+    "Mumbai",
+    "Nagpur",
+    "Noida",
+    "Pune"
+  ],
+  "validation": "5-fold out-of-fold (each listing predicted by a model that never saw it)",
+  "model": {
+    "mape_pct": 20.68,
+    "median_ape_pct": 14.76,
+    "r2_log_price": 0.805
+  },
+  "baseline_locality_mean": {
+    "mape_pct": 24.95,
+    "median_ape_pct": 18.83,
+    "r2_log_price": 0.723
+  },
+  "median_ape_pct_by_city": {
+    "Ahmedabad": 26.7,
+    "Bengaluru": 18.0,
+    "Chennai": 9.6,
+    "Delhi": 19.9,
+    "Faridabad": 13.2,
+    "Ghaziabad": 12.2,
+    "Gurugram": 17.6,
+    "Hyderabad": 15.2,
+    "Mumbai": 13.6,
+    "Nagpur": 14.0,
+    "Noida": 20.7,
+    "Pune": 13.4
+  },
+  "caveats": [
+    "Listings come from different sources/years, so 'fair price' is relative to those samples, not today's market.",
+    "Discounted listings are candidates to verify (could be old, different property type, or data errors).",
+    "Random split: near-duplicate listings can flatter the scores a little."
+  ]
+}

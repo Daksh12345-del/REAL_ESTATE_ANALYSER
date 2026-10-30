@@ -1,0 +1,46 @@
+
+== SALES ==
+  sale_gurgaon             raw rows: 10140
+  sale_gurgaon_flats       raw rows: 3017
+  sale_hyderabad           raw rows: 3660
+  sale_ahmedabad           raw rows: 3006
+  sale_delhi_magicbricks   raw rows: 1259
+  sale_delhi_ncr           raw rows: 7738
+  sale_bengaluru           raw rows: 13320
+  sale_noida               raw rows: 9086
+  sale_chennai             raw rows: 2620
+  sale_mumbai              raw rows: 76038
+  sale_maharashtra         raw rows: 60907
+  sale_pune_scraped        raw rows: 930
+  total: 191721 -> 128345 after cleaning
+
+== RENTS ==
+  rent_mumbai              raw rows: 23398
+  rent_pune                raw rows: 5361
+  rent_noida               raw rows: 10000
+  rent_multi               raw rows: 7691
+  rent_hyderabad           raw rows: 19110
+  rent_chennai             raw rows: 1031
+  total: 66591 -> 47915 after cleaning
+
+== RBI HPI ==
+  19 cities, 17 quarters (Q1.2022-23 .. Q1.2026-27)
+
+== NHB RESIDEX ==
+  50 cities, 4 quarters
+
+== FINAL: rows per city ==
+           sale_rows  median_price_per_sqft  rent_rows  median_rent_per_sqft
+city                                                                        
+Mumbai         49117                13089.0    17339.0                  68.8
+Pune           32501                 6915.0     4884.0                  22.2
+Gurugram       13334                 9464.5        NaN                   NaN
+Bengaluru      12246                 5489.0     1755.0                  30.0
+Noida           7886                 5527.5     6031.0                  20.0
+Delhi           2382                 8627.0     1680.0                  27.3
+Ahmedabad       2334                 6901.0        NaN                   NaN
+Hyderabad       2266                 5545.0    14654.0                  13.3
+Chennai         2063                 5425.0      989.0                  25.0
+Ghaziabad       2018                 4200.0        NaN                   NaN
+Nagpur          1734                 3938.5      583.0                  15.0
+Faridabad        464                 4215.5        NaN                   NaN

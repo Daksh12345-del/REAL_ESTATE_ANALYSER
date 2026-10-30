@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Real Estate Market Analyzer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <pre id="fatal" style="display:none;white-space:pre-wrap;margin:16px;padding:16px;background:#fef2f2;color:#991b1b;border:1px solid #fecaca;border-radius:8px;font:13px/1.6 monospace"></pre>
+    <script>
+      // If the app fails to start (bad import, syntax error ...) show the reason instead of a blank page.
+      function showFatal(msg) {
+        var el = document.getElementById('fatal')
+        el.style.display = 'block'
+        el.textContent = 'The app crashed. Please copy this message:\n\n' + msg
+      }
+      window.addEventListener('error', function (e) {
+        showFatal((e.message || 'Unknown error') + (e.filename ? '\n\nFile: ' + e.filename + ':' + e.lineno : ''))
+      })
+      window.addEventListener('unhandledrejection', function (e) {
+        showFatal('Unhandled promise rejection:\n' + ((e.reason && (e.reason.stack || e.reason.message)) || e.reason))
+      })
+    </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
